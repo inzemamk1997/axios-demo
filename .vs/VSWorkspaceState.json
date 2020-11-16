@@ -1,8 +1,9 @@
 {
   "ExpandedNodes": [
     "",
-    "\\src"
+    "\\src",
+    "\\src\\Components"
   ],
-  "SelectedNode": "\\src\\New File",
+  "SelectedNode": "\\src\\App.js",
   "PreviewInSolutionExplorer": false
 }
