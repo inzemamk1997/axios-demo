@@ -7,7 +7,12 @@ export default class PersonList extends React.Component {
     state = {
         isButtonClicked: false,
         persons: [],
-        columns: [{ Header: 'Name', accessor: 'name' }, { Header: 'Employee ID', accessor: 'id' }, { Header: "Employee Email", accessor: "email" }, { Header: "Employee Address", id: 'addressCity', accessor: obj => JSON.stringify(obj.address) }]
+        columns: [
+            { Header: 'Name', accessor: 'name' },
+            { Header: 'Employee ID', accessor: 'id' },
+            { Header: "Employee Email", accessor: "email" },
+            { Header: "Employee Address", id: 'addressCity', accessor: obj => JSON.stringify(obj.address) }
+        ]
     }
     componentDidMount() { }
 
@@ -18,7 +23,7 @@ export default class PersonList extends React.Component {
     }
 
     render() {
-        console.log(this.state.persons);
+       // console.log(this.state.persons);
 
         const fetchHandler = (event) => {
             this.fetchData();
